@@ -6,12 +6,12 @@
 	<artifactId>web-javaee</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
@@ -50,6 +50,11 @@
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.2.2.v20140723</version>
 			</plugin>
 		</plugins>
 	</build>
